@@ -19,13 +19,15 @@ function App() {
     <>
       <AppNavigation/>
       <Routes>
-        <Route path='/transaksi' element={ <TransaksiItem /> } />
-        <Route path='/badge' element={ <Badge tipe="Pemasukan" children={<img src={reactLogo}/>}/> }/>
+        <Route path='/transaksi' element={ <TransaksiItem />} />
+        <Route path='/badge' element={ <Badge />} />
         <Route path='/carddtatusdemo' element={ <CardStatusDemo /> } />
         <Route path='/headerbanner' element={ <HeaderBanner />} />
         <Route path='/transactionmanager' element={ <TransactionManager />} />
+        <Route path='/kartu' element={ <KartuRingkasan />} />
         <Route path='/karturingkasan' element={ <KartuRingkasan />} />
         <Route path='/LayoutGrid' element={ <LayoutGrid/>  }/>
+        <Route path='/wallet' element={ <WalletSummary />} />
         <Route path='/walletsummary' element={ <WalletSummary />} />
       </Routes>
     </>
