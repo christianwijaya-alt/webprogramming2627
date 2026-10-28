@@ -11,13 +11,14 @@ import KartuRingkasan from './component/KartuRingkasan'
 import WalletSummary from './component/WalletSummary'
 import LayoutGrid from './component/LayoutGrid'
 import AppNavigation from './component/AppNavigation'
-
-import reactLogo from './assets/react.svg'
+import PostListFetch from './component/PostListFetch'
 
 function App() {
   return (
     <>
       <AppNavigation />
+      <PostListFetch />
+
       <Routes>
         <Route path='/transaksi' element={ <TransaksiItem />} />
         <Route path='/kartu' element={ <KartuRingkasan />} />
