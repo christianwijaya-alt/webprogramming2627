@@ -17,8 +17,9 @@ import reactLogo from './assets/react.svg'
 function App() {
   return (
     <>
-      <AppNavigation/>
+      <AppNavigation />
       <Routes>
+        <Route path='/AppNavigation' element={ <AppNavigation/> } />
         <Route path='/transaksi' element={ <TransaksiItem />} />
         <Route path='/badge' element={ <Badge />} />
         <Route path='/CardStatusDemo' element={ <CardStatusDemo/> } />
