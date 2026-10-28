@@ -8,6 +8,7 @@ import Badge from './component/Badge'
 import WalletSummary from './component/WalletSummary'
 import AppNavigation from './component/AppNavigation'
 
+
 function App() {
   return (
     <>
