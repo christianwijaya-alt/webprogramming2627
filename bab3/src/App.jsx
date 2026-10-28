@@ -26,7 +26,7 @@ function App() {
         <Route path='/transactionmanager' element={ <TransactionManager />} />
         <Route path='/kartu' element={ <KartuRingkasan />} />
         <Route path='/karturingkasan' element={ <KartuRingkasan />} />
-        <Route path='/LayoutGrid' element={ <LayoutGrid/>  }/>
+        <Route path='/LayoutGrid' element={ <LayoutGrid/>  } />
         <Route path='/wallet' element={ <WalletSummary />} />
         <Route path='/walletsummary' element={ <WalletSummary />} />
       </Routes>
