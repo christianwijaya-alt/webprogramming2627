@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import {Form, InputGroup, Modal, Button, Table, ProgressBar} from 'react-bootstrap';
 
-// <AppNavigation />
+import AppNavigation from './AppNavigation'
 
 export default function TransactionManager() {
   // const s = useState(false)
@@ -38,6 +38,12 @@ export default function TransactionManager() {
             console.error('Error:', error.message);
         }
     };
+
+    useEffect(() => {
+        ambilData();
+        ambilDataAsync();
+        <AppNavigation />
+    }, []);
 
   return (
     <div className="container mt-4">
