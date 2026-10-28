@@ -7,11 +7,11 @@ import AppNavigation from './AppNavigation'
 export default function TransactionManager() {
   // const s = useState(false)
   const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
   // const t = useState([])
   const [transaksi, setTransaksi] = useState([])
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   const ambilData = () => {
         fetch('http://localhost:3000/transaksi')
@@ -42,11 +42,11 @@ export default function TransactionManager() {
     useEffect(() => {
         ambilData();
         ambilDataAsync();
-        <AppNavigation />
     }, []);
 
   return (
     <div className="container mt-4">
+    { /*<AppNavigation />*/ }
       <div className="d-flex justify-content-between align-items-center mb-3">
         <h3>Penggunaan Anggaran</h3>
         <Button variant="success" onClick={handleShow}>
