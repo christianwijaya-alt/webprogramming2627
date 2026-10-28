@@ -23,13 +23,13 @@ function App() {
         <Route path='/kartu' element={ <KartuRingkasan />} />
         <Route path='/badge' element={ <Badge />} />
         <Route path='/wallet' element={ <WalletSummary />} />
-        
+
         <Route path='/AppNavigation' element={ <AppNavigation/> } />
         <Route path='/CardStatusDemo' element={ <CardStatusDemo/> } />
         <Route path='/HeaderBanner' element={ <HeaderBanner/>  } />
         <Route path='/TransactionManager' element={ <TransactionManager/> } />
         <Route path='/KartuRingkasan' element={ <KartuRingkasan/> } />
-        <Route path='/LayoutGrid' element={ <LayoutGrid/> } />
+        <Route path='/LayoutGrid' element={ <LayoutGrid/>  } />
         <Route path='/WalletSummary' element={ <WalletSummary/> } />
       </Routes>
     </>
